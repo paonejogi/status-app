@@ -8,6 +8,25 @@
 </head>
 <body>
     <p>This is Timesheet page</p>
+    <button onclick="darkMode()">Dark Mode</button>
+    <script>
+        let flag = true;
+        function darkMode(){
+            if(flag){
+                document.body.style.backgroundColor = "grey";
+                flag = false
+            }
+            else{
+                document.body.style.backgroundColor = "#a27e6f";
+                flag = true;
+            }
+            
+        }
+
+        // document.querySelector("button").addEventListener("click",function(){
+        //     alert("You become a night watcher!")
+        // })
+    </script>
     
 </body>
 </html>
